@@ -5,3 +5,5 @@
 	- evir
 	- rminer
 	- graphics
+
+TRAVAUX SUR LA REGRESSION (LINEAIRE ET MULTIPLE)
