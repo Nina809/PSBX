@@ -1,0 +1,114 @@
+---
+title: "Regression Lineaire Simple ET Multiple"
+author: "Nina ZOUMANIGUI"
+date: "26 janvier 2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+       **REGRESSION LINEAIRE SIMPLE ET MULTIPLE ** 
+
+
+# INTRODUCTION 
+
+
+Dans Les règles de la méthode sociologique, Émile Durkheim écrivait:
+
+Le modèle de régression linéaire simple ou multiple  est sans doute aujourd’hui une des méthodes les plus connues et appliquées à l’instar des autres méthodes
+ Elle sert  à  établir entre une variable quantitative et une ou plusieurs variable quantitative à l’aide d’un modèle statistique. 
+Dans le cas de deux variable on a  une régression linéaire simple, la régression linéaire est simpliste.
+Dans le cas de plus de deux variables , on parle de régression linéaire multiple.
+ 
+ « L’utilisation d’un modèle de régression suppose l’existence d’une relation entre les variables étudiées. »
+ 
+## Régression linéaire simple
+
+Le modèle de régression linéaire simple ou multiple  est sans doute aujourd’hui une des méthodes les plus connues et appliquées à l’instar des autres méthodes
+ Elle sert  à  établir entre une variable quantitative et une ou plusieurs variable quantitative à l’aide d’un modèle statistique. 
+Dans le cas de deux variable on une régression linéaire simple, la régression linéaire est simpliste.
+Dans le cas de plus de deux variables.  
+
+Nous allons voir comment nous pouvons modéliser cette relation linéaire, c'est-à-dire comment représenter le mieux possible la relation linéaire entre deux variables à l’aide d’une équation mathématique. 
+Par exemple, si la relation semble rassembler les points autour d’une ligne droite dans le nuage de points, nous pouvons résumer cette relation par l’équation qui résout le mieux cette droite. 
+De même, il est possible de modéliser mathématiquement d’autres types de relation (quadratique, cubique, exponentielle, etc.).
+Les questions auxquelles répond la modélisation de la relation linéaire ressemblent souvent à celles- ci :
+De combien les ventes d’une compagnie peuvent augmenter lorsque le budget de publicité est doublé ?
+De combien le taux de cholestérol augmente-t-il en fonction de l’augmentation du pourcentage de gras ?
+Le nombre d’heures d’étude est-il associé au rendement scolaire ?
+Nous allons étudier la plus simple des modélisations: la régression linéaire simple.
+ 
+### Hypothèse nulle
+Dans le cas de la régression, l'hypothèse nulle est qu'il n'y a pas de relation entre la variable dépendante et la variable indépendante, donc que la variable indépendante ne permet pas de prédire la variable dépendante.
+L'hypothèse alternative est qu'il est possible de prédire la variable dépendante à partir de la variable indépendante.
+
+#### Prémisses
+Distribution normale : les valeurs de la variable dépendante sont normalement distribuées.
+Homogénéité des variances : la variance dans la distribution de la variable dépendante doit être constante pour toutes les valeurs de la variable indépendante.
+Le prédicteur (la variable indépendante) doit présenter une certaine variance dans les données (pas de variance nulle).
+ Le prédicteur n'est pas corrélé à des variables externes (qui n'ont pas été intégrées au modèle) qui influencent la variable dépendante.
+Homoscédasticité : pour toutes les valeurs du prédicteur, la variance des résiduels (erreur de mesure) est homogène. Cette prémisse peut être vérifiée par l'examen du nuage de points du croisement entre les valeurs prédites standardisées et les résiduels standardisés. Ce graphique peut être réalisé à partir du bouton Plots de la boite de dialogue principale de la régression.
+Distribution normale et aléatoire des résiduels : cette prémisse signifie que la différence entre le modèle et les valeurs observées sont près de zéro. Elle peut être vérifiée par l'examen du nuage de points qui a servi à vérifier la prémisse d'homoscédasticité.
+Les valeurs de la variable dépendante sont indépendantes : chaque valeur de la variable dépendante vient d'une observation distincte. Les observations ne sont pas reliées entre elles.
+Relation linéaire entre la variable indépendante et la variable dépendante : la relation modélisée est linéaire. Cette prémisse peut être vérifiée par le nuage de points du croisement entre ces deux variables. 
+
+*Représentation graphique de la relation*
+
+Des chercheurs ont utilisé l’âge et le niveau d’éducation pour étudier l’attention directe de patients âgés. Le MAD est la mesure de la concentration du patient sur un objet d’intérêt en dehors de toute distraction. L’étude a porté sur un échantillon aléatoirement sélectionné dans la population de patients de plus de 80 ans.
+Conduire une régression linéaire multiple sur les données (« Examen.xls ») et commenter
+
+Présenter et commenter le tableau des résultats de l’estimation des coefficients dans un rapport de travail
+
+
+```{r}
+g=read.csv("C:\\Users\\ninaz\\OneDrive\\Documents\\Exament\\Examen.csv",sep=";", header=T)
+attach(g)
+
+```
+
+definir les variables 
+```{r}
+y=g$Age
+x=g$Elevel
+plot(y,x)
+```
+
+Autre application 
+
+```{r}
+data=read.csv("C:\\Users\\ninaz\\OneDrive\\Bureau\\R\\mtcars.csv",sep = ";", header= T)
+attach(data)
+head(data)
+```
+
+
+
+```{r}
+plot(mpg~wt,pch=20)
+fit= lm(mpg~wt,data=data)
+fit
+abline(fit,col="red",lwd=2)
+```
+
+#Regression multiple
+
+ *Définition*
+ 
+Le modèle de régression multiple est une généralisation du modèle de régression simple lorsque les variables
+explicatives sont en nombre fini. Nous supposons donc que les données collectées suivent le modèle suivant :
+
+$yi = b0 + b1xi1 + b2xi2 + · · · + bpxip + εi , i = 1, · · · , n$.
+
+
+Tous les résultats précédents se généralisent dans le cas général.
+
+#CONCLUSION
+
+Dans une régression multiple, il se peut que le nombre p des variables disponibles soit grand. Cette quantité
+d'information est parfois superue ou redondante. Ainsi la diminution du nombre de vatiables réellement
+intéressantes dans la régression est envisageable. Soit on part du modèle complet et on retire des variables
+en utilisant un critère décrit sous Statistica (pas à pas descendant). Soit on part d'une régression simple et
+on ajoute des variables qui enrichissent le modèle (pas à pas ascendant). Sous Statistica, dans ces deux cas,
+on arrête d'enlever ou d'ajouter une variable au modèle en analysant la statistique F.
+
+
