@@ -1,0 +1,339 @@
+---
+title: "ApprÃ©ciation des travaux sur R"
+author: "Nina ZOUMANIGUI"
+date: "30 janvier 2021"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Dossier individuel sur la programmation R: 
+
+Intitulé du travail: Data visualisation: Data visualisation interactive avec Plotly
+
+Etudiante: IMEN DERROUICHE [lien](https://github.com/imenderrouiche) 
+
+**INTRODUCTION**
+
+Dans l'optique d'une évaluation par les pairs,ce présent travail consiste à apprécier le rendu du travail effectué par Imen et son groupe  qui consiste à présenter le package plotly. 
+
+Mon appréciation s'articulera sur 3 critères essentiels dont :
+
+* Appréciation fondé sur la  forme du devoir; 
+   (Rédaction, réferences, struture)
+   
+* Apreciation fondé sur le contenu du devoir; 
+   (Révue litteraire, application du code , etude de cas;) 
+   
+* Conclusion et recommandation.
+
+** APPRECIATION DE LA FORME DU TRAVAIL **
+
+Le taravail rendu est riche de par sa forme et de sa  structure du devoir. 
+
+1- Une introduction ,
+2- Le detaille du sujet étudier beaucoup plus explicite ,
+3- Les forces et faiblesse du sujet étudier sont bien énumerées.
+
+
+Le groupe a tenu compte également de la documention supplementaireayant trait au  sujet d'etude. 
+
+Exemple de réferénces:
+
+https://plotly-r.com
+
+https://cran.r-project.org/web/packages/plotly/plotly.pdf
+
+https://plotly.com/r/
+
+https://plotly.com/r/histograms/
+
+https://plotly.com/python/3d-scatter-plots/
+
+https://plotly.com/python/maps/ 
+
+## Apreciation du contenu du devoir 
+
+En général le travail de l'équipe à permi à faire ressortir l'utilité du package plotly, de son intallation sur R jusqu'à son implementation sur des sujets d'etude comme signaler ci- dessous par le groupe.
+
+<< Plotly.py est un package gratuit et open source.
+
+Il existe deux méthodes principales de créer un objet complotement: 
+
+- Soit en transformant un objet ggplot2 (via ggplotly ()) en un objet plotly
+- Soit en initialisant directement un objet plotly avec plot_ly () / plot_geo () / plot_mapbox ().
+
+Cette documentation va principalement parler de la deuxième façon de créer des objets complotés.
+
+Les deux approches ont des forces et des faiblesses quelque peu complémentaires, de sorte qu'il peut être rentable d'apprendre les deux approches. De plus, les deux approches sont une implémentation de la grammaire des graphiques et les deux sont alimentées par la bibliothèque de graphes JavaScript plotly.js. Beaucoup de concepts et d'outils qu'on utilise pour une manière pourront être utilisés pour l'autre.
+
+## Package Plotly
+
+Sur installe ici le package Ploty:
+
+`` {r tracé, message = FALSE} 
+install.packages ( " tracé " )
+bibliothèque ( tracé )
+### Autres librairies qu'on utilise dans la documentation
+library ( rmarkdown ) # Convertir les documents R Markdown en divers formats
+library ( dplyr ) # dplyr est une extension facilitant le traitement et la manipulation de données enregistrées dans une ou plusieurs tables
+bibliothèque ( htmlwidgets ) # Exporter des plot en html >>
+
+Le contenu du devoir du groupe est beaucoup plus  exaustif car il ressort beaucoup d'apect lié à la fonctionalité de plotly sa specifité  
+
+La description sur la création de visuels:
+
+1- Nuage  de points
+
+3- Nuages de points basique
+
+4- Nuages de points avec la fonction `add_trace` et la fonction` layout`
+
+5- Nuages de points avec la fonction `add_markers`
+
+6- Couleurs des points
+
+7-Symboles des points
+
+8-Taille des points
+
+9-Lignes & Polygones
+
+10-Les types de lignes avec `add_lines`
+
+11-Les segments avec `add_segments`
+
+12-Graphiques en haltères (graphique Dumbell)
+
+**CONCLUSION**  
+ 
+En definif le devoir du groupe à été traité dans sa specifité mais pas dans generalité, car il serait encore beaucoup plus avantageux si le groupe piuvait faire une etude comparative de plotly avec d'autres packages ayant les mêmes fonction de data visualisation.
+
+## APRRECIATION ET ANALYSE SUR LE DOSSIER DE L'ETUDIANT
+ 
+Comme appréciation le devoir traité par le groupe est satisfaisant.
+
+NOTE: 18/20
+
+
+
+## Dossier individuel sur la programmation R: 
+
+Intitulé du travail: TENSORFLOW
+
+Etudiant: Marko ARSIC [Lien](https://github.com/ARSICMrk)
+
+Sur sur ce projet , mon travail consitéra à apprécier le contenu de la recherche mené sur le tensorflow
+
+#Historique
+
+Le Machine Learning est une technologie qui peut s’avérer extrêmement utile pour de nombreux cas d’usage, mais qui s’avère malheureusement complexe à manipuler. L’acquisition de données, l’entraînement de modèles, de déploiement de réseaux de neurones requièrent à l’origine d’importantes compétences techniques.
+
+Cependant, grâce aux différents frameworks de Machine Learning, l’accès à cette technologie s’est beaucoup simplifié au fil des années. Parmi ces frameworks, on compte notamment PyTorch, CNTK, MXNet, et Google Tensorflow.
+
+Créé par l’équipe Google Brain en 2011, sous la forme d’un système propriétaire dédié au réseaux de neurones de Deep Learning, TensorFlow s’appelait à l’origine DistBelief. Par la suite, le code source de DistBelief a été modifié et cet outil est devenu une bibliothèque basée application. En 2015, il a été renommé TensorFlow et Google l’a rendu open source. Depuis lors, il a subi plus de 21000 modifications par la communication et est passé en version 1.0 en février 2017.
+
+Pour faire simple, TensorFlow est une bibliothèque de Machine Learning, il s’agit d’une boîte à outils permettant de résoudre des problèmes mathématiques extrêmement complexes avec aisance. Elle permet aux chercheurs de développer des architectures d’apprentissage expérimentales et de les transformer en logiciels.
+
+On peut le concevoir comme un système de programmation dans lequel les calculs sont représentés sous forme de graphiques. Les noeuds du graphique représentent les opérations mathématiques, et les bordures représentent des flèches de données multidimensionnelles communiquées entre elles : les tensors.
+
+TensorFlow regroupe un grand nombre de modèles et d’algorithmes de Machine Learning et de Deep Learning. Son API front-end de développement d’applications repose sur le langage de programmation Python, tandis que l’exécution de ces applications s’effectue en C++ haute-performance.
+
+Cette bibliothèque permet notamment d’entraîner et d’exécuter des réseaux de neurones pour la classification de chiffres écrits à la main, la reconnaissance d’image, les plongements de mots, les réseaux de neurones récurrents, les modèles sequence-to-sequence pour la traduction automatique, ou encore le traitement naturel du langage.
+
+![En image](file:///C:/Users/ninaz/OneDrive/Documents/tensorflow.JPG)
+
+TensorFlow permet aux développeurs de créer des graphiques de dataflow (dataflow graphs), à savoir des structures qui décrivent la façon dont les données se déplacent sur un graphique ou une série de noeuds de traitement.
+
+Chaque noeud du graphique représente une opération mathématique, et chaque connexion entre ces noeuds est une flèche de données multidimensionnelle : un tensor.
+
+Les noeuds et les tensors sont des objets Python, et les applications TensorFlow sont elles-mêmes des applications Python. Cependant, les opérations mathématiques en elles-mêmes ne sont pas effectuées en Python. Les bibliothèques de transformation disponibles sur TensorFlow sont écrites en C++ haute-performance. Ainsi, le Python se contente de diriger le trafic entre les éléments et fournit des abstractions de programmation de haut niveau pour les connecter entre eux.
+
+Les applications TensorFlow peuvent être exécutées sur une machine locale, un cluster sur le Cloud, des appareils mobiles iOS ou Android, ou même des CPU et des GPU. Sur la Google Cloud Platform, il est possible d’exécuter TensorFlow sur la TPU (TensorFlow Processing Unit) pour profiter d’une importante accélération.
+
+
+Dans le travail réalisé par l'etudiant, il ne ressort pas les limites ou en d'autre mots les inconvenients de tensorflow.
+
+Les avantages de TensorFlow sont multiples. Tout d’abord, grâce à l’abstraction, ce framework facilite l’implémentation d’algorithmes et permet au développeur de se focaliser sur la logique générale d’une application.
+
+En outre, le mode ” eager execution “ permet d’évaluer et de modifier toutes les opérations de graph de façon séparée et transparente plutôt que d’avoir à construire l’intégralité du graphique en tant qu’objet opaque unique et de tout évaluer en une fois. De même, la suite de visualisation TensorBoard permet d’inspecter la façon dont les graphiques fonctionnent par le biais d’un tableau de bord interactif basé web.
+
+En outre, grâce au soutien de Google, le déploiement et l’utilisation de TensorFlow sont facilités. En plus du TPU proposé sur Google Cloud pour accélérer les performances, le géant californien propose aussi un hub online permettant de partager les modèles créés avec TensorFlow ainsi que des versions mobiles et web du framework. Un autre avantage est son caractère open source, personnalisable, et modulaire.
+
+Parmi ses inconvénients, on peut citer le fait qu’un même modèle entraîné sur deux systèmes différents présentera parfois des variations même si les données avec lesquelles il a été nourri sont exactement les mêmes. En outre, TensorFlow ne prend pas en charge OpenCL. Enfin, il requiert des connaissances en calculus avancé et en algèbre linéaire ainsi qu’une importante compréhension du Machine Learning.
+
+
+## APRRECIATION ET ANALYSE SUR LE DOSSIER DE L'ETUDIANT
+
+Comme appréciation le devoir traité par le groupe est satisfaisant.
+
+NOTE: 17/20
+
+
+## Dossier individuel sur la programmation R: 
+
+Intitulé du travail: PROJET SUR LES PACKAGES
+
+Etudiant: Zakaria Rida [Lien](https://github.com/ZakariaRida96)
+
+Sur sur ce projet , mon travail consitéra à apprécier le contenu de la recherche mené sur les package notamment parmi eux: Kscorret 
+
+Package KScorrect
+KScorrect met en œuvre le test de Kolmogorov-Smirnov corrigé par Lilliefors pour une utilisation dans les
+tests de qualité d’ajustement, adapté lorsque les paramètres de population sont inconnus et doivent être
+estimés par des statistiques d’échantillon. Les P-values sont estimées par simulation. Codé pour compléter
+stats :: ks.test, il peut être utilisé avec une variété de distributions continues, y compris les distributions
+normales, lognormales, mélange de normales, uniformes, loguniformes, exponentielles, gamma et Weibull.
+Des fonctions sont également fournies pour générer des nombres aléatoires et calculer des fonctions de densité,
+de distribution et de quantile pour les distributions de mélange loguniformes et normales.
+
+![En image](file:///C:/Users/ninaz/OneDrive/Documents/Kscaret.JPG)
+
+Sur ce travail l'étudiant à tenu compte de la structure du devoir en rappelant la fonctionalité du package comme signalé ci-haut en image. 
+
+Exemple d’applications
+
+![En image](file:///C:/Users/ninaz/OneDrive/Documents/Kscaret.JPG)
+
+Application
+
+```{r}
+mean <- c(2,8)
+pro <- c(.30,.100)
+sd <- c(.9, 2)
+```
+
+
+En résumé après lecture du dossier il faut dire sans doute que l'étudiant a fait l'effort d'approfoindir sa recherche en tenant compte des aspects beaucoup plus explicte sur les packages , mais ily a quand même manqué des réfernce.
+
+## APRRECIATION ET ANALYSE SUR LE DOSSIER DE L'ETUDIANT
+
+Comme appréciation le devoir traité par le groupe est satisfaisant.
+
+NOTE: 18/20
+
+
+## Dossier individuel sur la programmation R: 
+
+Intitulé du travail:  Résumé_R_Ggplot2
+
+Etudiant: Yin Xueting [Lien](https://github.com/yinxueting)
+
+Sur sur ce projet , mon travail consitéra à apprécier le contenu de la recherche mené sur le Résumé_R_Ggplot2
+
+Ce présent travail realisé sur article elaboré par un auteur du nom de jean , résumé par l'etudiant . A cet effet, l'etudiant à fait ressortir la portabilité du code comme il le signale dans le résumé fait sur l'article: 
+
+Nous allons commenter la partie de la boite à moustache dans ce document. Une fois les données efficaces, Jean a construit une boite à moustache de base en utilisant une seule ligne de code:
+
+`` `{r}
+ggplot ( rp ) + geom_boxplot (aes ( x  =  département , y  =  maison ))
+''
+
+Il explique ensuite que l'on peut modifier la couleur et la largeur avec un exemple de modification de largeur:
+
+`` `{r}
+ggplot ( rp ) + geom_boxplot (aes ( x  =  département , y  =  maison ), varwidth  =  TRUE )
+''
+
+Enfin, il a rajouté un code: 
+
+`` `{r}
+ggplot ( rp ) + geom_boxplot (aes ( x  =  departement , y  =  maison )) + geom_jitter (aes ( x  =  departement , y  =  maison ), col  =  " bleu " , alpha  =  0.3 )
+''
+
+Mais ici il explique seulement que le geom "jitter" est une fonction plus précise que le geom "point", pourtant, il n'a pas expliqué ce qui fait geom "point", ni ce que col et alpha signifier, même si les codes sont compréhensibles mais pour les débutants, une explication plus détaillée serait bénéfique à leur compréhension.
+
+##  Évaluation:
+<font color = blue> 1. Le document est-il visuellement agréable? </font>
+
+Le document est relativement agréable à lire, mais il y a des points à améliorer, comme des graphiques trop grands et prenant beaucoup de place sur une feuille de papier, de plus, certains résultats sont inutiles à montrer, comme les résultats du chargement des packages.
+
+<font color = blue> 2. Est-il compréhensible? (qualité des explications) </font>
+
+Oui, il est compréhensible même s'il manque un peu de détail dans certains codes, mais Jean est, dans l'ensemble, très clair dans sa présentation.
+
+<font color = blue> 3. Combien de fonctions ont été utilisées? </font>
+
+Jean présente principalement deux graphiques, chaque graphique a environ quatre fonctions.
+
+<font color = blue> 4. Est-il intéressant d'utiliser de telles fonctions? </font>
+
+L'utilisation de ces fonctions est pertinente et intéressante, car Jean a développé le code de base de ces deux graphiques.
+
+Le résumé fait sur l'article ressort tout de même les limites de l'article de jean car il ne ressort pas la bibliographie. 
+
+## APRRECIATION ET ANALYSE SUR LE DOSSIER DE L'ETUDIANT
+
+Comme appréciation le devoir traité par le groupe est satisfaisant.
+
+NOTE: 15/20
+
+
+## Dossier individuel sur la programmation R: 
+
+Intitulé du travail: Package RMiner : Data Mining Classification et Méthode de Régression
+
+Etudiant: Twu AUFERE [Lien](https://github.com/T-AUF)
+
+
+Dans ce travail  réaliser  par l'etudiante , mon travaille consistera à apprécier la forme , le fond  du travail et en faire une conclusion. 
+
+A cet effet, 
+
+Du point de vue visibilité du document , la structure a été bien respectée comme elle demontre ci-dessous: 
+
+Rminer : kesako ?
+Le package Rminer aide à la manipulation des données algorithmiques pour le data mining
+concernant la classification et la régression (incluant la prévision de series temporelles).
+Pour utiliser le package Rminer et ses fonctions :
+- vérifier si le package est installé dans R
+- sinon installer le package puis l’appeler avec la library
+ `Install.packages(« rminer »)`
+ `Library(rminer)`
+Les fonctions de Rminer
+Ci-desous la liste des fonctions du package Rminer. Nous n’allons vous présenter que les fonctions
+qui nous semblent les plus pertinentes dans ce tutoriat.
+Si vous souhaitez approfondir votre connaissance sur les autres fonctions, nous vous invitons à aller
+sur la documentation R du package [Lien]
+Si vous souhaitez consulter l’aide, taper dans la commande R `help(package=rminer)`
+Liste des fonctions de Rminer :
+ CasesSeries
+ crossvaldata
+ delevels
+ fit
+ holdout
+ Importance
+ imputation
+ lforecast
+ mgraph
+ mining
+ mmetric
+
+mparheuristic
+ predict.fit
+ savemining
+ sa_fri1
+ sin1reg
+ vecplot
+Ce tutoriat se concentra sur les fonctions suivantes du package Rminer qui peuvent être réparties
+dans 3 phases dans l’analyse des données :
+- Data preparation : CasesSeries, delevels
+- Modeling : fit, predict, mining
+- Evaluation : mmetric, mgraph, mining
+
+Sur la visibilité : la structure est bonne et bien articulée.
+
+Application: En terme d'application,  quelques cas pratiques ont été realisé.
+
+![En image](file:///C:/Users/ninaz/OneDrive/Documents/twu.JPG)
+
+## APRRECIATION ET ANALYSE SUR LE DOSSIER DE L'ETUDIANT
+
+Comme appréciation le devoir traité par le groupe est satisfaisant.
+
+NOTE: 17/20
+
