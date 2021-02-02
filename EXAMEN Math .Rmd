@@ -1,0 +1,211 @@
+---
+title: "MATHEMATIQUE"
+author: "Nina ZOUMANIGUI"
+date: "02/02/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Dossier individuel sur la MATHEMATIQUE ET BIG DATA: 
+
+Intitulé du travail: Article ACP 
+
+Etudiant: Benjamin GUIGON [lien](https://github.com/benjaminguigon) 
+
+**INTRODUCTION**
+
+Dans l'optique d'une évaluation par les pairs,ce présent travail consiste à apprécier le rendu du travail effectué par Benjamin et  qui consiste à présenter le ACD. 
+
+Mon appréciation s'articulera sur 4 critères essentiels dont :
+
+1. Le document est-il visuellement agréable?
+2. Est-il compréhensible? (qualité des explications)
+3. Combien de fonctions ont été utilisées?
+4. Est-il intéressant d’utiliser de telles fonctions?
+5. Conclusion et recommendation.
+
+                    -------------------------------------------
+
+1. Le document est-il visuellement agréable?
+
+Le document est bien présenté dans sa structure, il rappelle également de l'historique et la porté du package: 
+
+comme indiquer par l'etudiant ci dessous 
+
+"Lorsqu’on ´etudie simultan´ement un nombre important de variables quantitatives
+(ne serait-ce que 4 !), comment en faire un graphique global ? La difficult´e vient
+de ce que les individus ´etudi´es ne sont plus repr´esent´es dans un plan, espace de
+dimension 2, mais dans un espace de dimension plus importante (par exemple
+4). L’objectif de l’Analyse en Composantes Principales (ACP) est de revenir `a
+un espace de dimension r´eduite (par exemple 2) en d´eformant le moins possible
+la r´ealit´e (cf. l’introduction ´el´ementaire `a l’ACP). Il s’agit donc d’obtenir le
+r´esum´e le plus pertinent possible des donn´ees initiales."
+
+2. Est-il compréhensible? (qualité des explications)
+
+Le travail de Benjamin est explicite et comprehensif , il ressort les codes dans son application et également avec les formules:
+
+Cette formule, sous forme matricielle, permet de calculer le vecteur des
+barycentres de chaque individus.
+- Matrice des donn´ees centr´ees :$X¯ = X − 1nx0$
+
+k n’est donc rien d’autre que le
+produit scalaire par la mesure des D des deux.
+- Ecart-type de Xj: σj = $(xjDxj)1/2 = kxjkD$
+
+L’´equart-type est la racine de la variance, soit la racine de la formule juste
+au dessus.
+- Matrice des covariances
+$S =Xn i=1 ωi(xi − x¯)(xi − x¯)0 = X¯0DX¯$
+
+Pour retrouver la matrice de covariance, donc des covariances de toutes les
+variables entre elles, on utilise la formule du calcul de la covariance entre 2
+variables mais en utilisant la matrice X pour avoir tous les couples de variables.
+- Correlation de Xj et Xk
+
+Par d´efinition du produit scalaire, nous retrouvons que le produit scalaire
+de 2 variables ne donne le cosinus de l’angle entre ces 2 variables.
+A noter que : la longueur d’un vecteur repr´esente un ´ecart-type et le cosinus
+d’un angle entre deux vecteurs repr´esente une corr´elation.
+
+4. Est-il intéressant d’utiliser de telles fonctions?
+
+Le package ACD est d'autant plus interessant car il permet de ressortir son utilité.
+ACD Media Support Package est un logiciel de Shareware dans la catégorie Home & Hobby développé par ACD Systems Ltd..
+
+## APRRECIATION ET ANALYSE SUR LE DOSSIER DE L'ETUDIANT.
+Comme appréciation le devoir traité par l'etudiant  est satisfaisant.
+
+
+## Dossier individuel sur la MATHEMATIQUE ET BIG DATA: 
+
+Intitulé du travail: Regression logistique 
+
+Etudiant: Gaspard Palay  [lien](https://github.com/GaspardPalay) 
+
+
+1. Le document est-il visuellement agréable?
+
+L'etudiant a veillé sur l'articulation de son  devoir comme dans cette introduction ou il met en exergue un introduction sur le sujet étudier . 
+
+La regression logistique sert `a analyser une variable binaire (O/1) (VRAI/FAUX)
+en fonction d’une variable quantitative. La regression logistique est typiquement
+utilis´ee dans des siutations de sciences humaines et sociales ou en m´edecine. Ce
+type de mod`ele est utilis´e en machine learning pour des apprentissages supervis´es. Cette algorithme va faire de la regression (non pas de la classification). 
+
+2. Est-il compréhensible? (qualité des explications)
+
+Le sujet est bien expliquer dans son contenu et le detaille est des codes est mieux expliquer. 
+
+Explication du modele mathematique
+
+La regression logistique est un prolongement de la regression lineaire.
+Avec un mod`ele de regression lineaire classique, on aura le modele mathematique
+suivant :
+= $↵X +$
+L’esp´erance sera donc calcul´ee avec la foction suivante :
+(Y ) = $↵X +$ 
+
+## APRRECIATION ET ANALYSE SUR LE DOSSIER DE L'ETUDIANT.
+Comme appréciation le devoir traité par l'etudiant  est satisfaisant.
+ 
+ 
+## Dossier individuel sur la MATHEMATIQUE ET BIG DATA: 
+
+Intitulé du travail: Approche mathématiques - Émojis.html 
+
+Etudiant:  OlfaLmt [lien](https://github.com/OlfaLmt) 
+
+Mon appréciation s'articulera sur 4 critères essentiels dont :
+
+1. Le document est-il visuellement agréable? 
+
+Le devoir est bien structuré lplusieurs codes ont été mis en avance par l'etudiante.
+
+2. Est-il compréhensible? (qualité des explications)
+Le sujet étudier a été detailler et céla rend le sujet beaucoup plus comprehensif le le contenu.
+
+3. Combien de fonctions ont été utilisées?
+En terme de combien de fonction ont été utilisées ? le groupe c'est servi de beaucoup plus  de source dont notamment beaucoup de Github : 
+
+$/ *! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css$
+@media print {
+  * ,
+  * : avant ,
+  * : après {
+    fond : transparent ! important ;
+    boîte-ombre : aucun ! important ;
+    text-shadow : aucun ! important $
+
+4. Est-il intéressant d’utiliser de telles fonctions?
+
+Les emojis sont importants dans un contexte specifiques et avec beaucoup d'utilité.
+
+5. Conclusion et recommendation.
+
+## APRRECIATION ET ANALYSE SUR LE DOSSIER DE L'ETUDIANT.
+Comme appréciation le devoir traité par l'etudiante  est satisfaisant.
+
+
+## Dossier individuel sur la MATHEMATIQUE ET BIG DATA: 
+
+Intitulé du travail: Implementation_of_spatial_data_with R.Rmd 
+
+Etudiant: Adrien JUPITER [lien](https://github.com/akjupiter) 
+
+1. Le document est-il visuellement agréable?
+
+En analyse numérique, l'interpolation spatiale désigne l'interpolation numérique de fonctions de plus d'une variable.  
+L'interpolation spatiale est notamment utilisée en géostatistique, où elle est utilisée pour reconstruire les valeurs d'une variable régionalisée sur un domaine à partir d'échantillons connus en un nombre limité de points. Par exemple en météorologie, il s'agit de passer de valeurs intermédiaires inconnues à partir de valeurs discrètes connues d'une variable dépendante, comme la température, sur une carte météorologique1.   
+Ce document vous présente quelques exemples d'implémentations de différentes méthodes d'interpolation spatiale en langage R.
+
+Avant de commencer, il est nécessaire d'installer les packages suivants:
+
++ rgdal
++ tmap
++ spatstat
++ maptools
++ raster
++ gstat
++ sp  
+Au regard d'une bonne introduction la structure du devoir est bien amorcer.
+
+2. Est-il compréhensible? (qualité des explications)?
+
+Interpolation
+
+`` {r, avertissement = FALSE, message = FALSE, résultats = 'masquer'}
+
+bibliothèque ( rgdal )
+bibliothèque ( tmap )
+z  <- gzcon (url ( " http://colby.edu/~mgimond/Spatial/Data/precip.rds " ))
+P  <- lireRDS ( z )
+z  <- gzcon (url ( " http://colby.edu/~mgimond/Spatial/Data/texas.rds " ))
+W  <- lireRDS ( z )
+P @ bbox  <-  W @ bbox
+tm_shape ( W ) + tm_polygones () +
+  tm_shape ( P ) +
+  tm_dots ( col = " Precip_in " , palette  =  " RdBu " , auto.palette.mapping  =  FALSE ,
+  
+  tm_text ( " Precip_in " , just = " left " , xmod = .5 , size  =  0.7 ) +
+  tm_legend ( legend.outside = TRUE )
+''  
+4. Est-il intéressant d’utiliser de telles fonctions?
+
+Cette experience est  importante dans la mesure ou elle permet de faire ressortir les traits de convergences d'une interpolation des données spatiales sur R. 
+
+5. Conclusion et recommendation.
+
+## APRRECIATION ET ANALYSE SUR LE DOSSIER DE L'ETUDIANT.
+
+Comme appréciation le devoir traité par l'etudiant  est satisfaisant.
+
+
+
+
+
+
+
